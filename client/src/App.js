@@ -23,6 +23,7 @@ function App() {
           <Link to="/otherpage">Other Page</Link>
         </header>
         <div>
+          <p>No body, no body, but you</p>
           <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
         </div>
