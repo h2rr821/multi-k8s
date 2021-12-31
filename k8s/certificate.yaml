@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: renronghuang-com-tls
+spec:
+  secretName: renronghuang-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: renronghuang.com
+  dnsNames:
+    - renronghuang.com
+    - www.renronghuang.com
